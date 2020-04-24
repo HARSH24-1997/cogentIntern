@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Intro from './component/Intro';
+import Login from './component/Login';
+import SignUp from './component/SignUp';
+import Layout from './component/Layout';
+import Dashboard from './component/Dashboard';
+import Activity from './component/Activity';
+import Profile from './component/Profile';
+import Filter from './component/Filter';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Intro/> */}
+    {/* <Login/> */}
+    {/* <SignUp/> */}
+    {/* <Layout/> */}
+    {/* <Dashboard/> */}
+    {/* <Activity/> */}
+    {/* <Profile/> */}
+    <Filter/>
+
+    </>
   );
 }
 
