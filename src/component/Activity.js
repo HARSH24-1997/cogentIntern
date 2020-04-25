@@ -3,7 +3,9 @@ import BarGraph from './BarGraph'
 function Activity() {
     return (
         <>
+        <div className="container-fluid">
         <BarGraph/>
+        </div>
         </>
     )
 }

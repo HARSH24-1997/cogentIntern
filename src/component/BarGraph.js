@@ -14,7 +14,7 @@ const data = {
     labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [
       {
-        label: 'Earn',
+        label: 'Earn in Thousands',
         backgroundColor: '#396afc',
         borderColor: '#396afc',
         borderWidth: 1,
@@ -32,7 +32,7 @@ const data = {
       <div className="py-5 px-3">
          <Bar
           data={data}
-          width={100}
+          width={80}
           height={450}
           options={{
             responsive: true,

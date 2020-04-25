@@ -114,8 +114,9 @@ function Navbar(props) {
   const classes = useStyles();
 
   return (
+    
     <div className={classes.root}>
-        <div className="Navbar2">
+      <div className="Navbar2 pb-2">
         <Toolbar>
           {/* <IconButton edge="end" className={classes.menuButton, classes.edgeEnd } color="inherit" aria-label="menu">
             <Button onClick={toggleDrawer('left', true)}><MenuIcon/></Button>

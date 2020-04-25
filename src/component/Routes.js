@@ -12,7 +12,7 @@ import { TiContacts } from "react-icons/ti";
 
 const Routes = [
   {
-    path: '/home',
+    path: '/Home',
     sidebarName: 'Home',
     icon: FaHome,
     component: Home,
@@ -63,7 +63,7 @@ const Routes = [
   },
   {
     path: '/LogOut',
-    sidebarName: 'LogOut',
+    sidebarName: 'Logout',
     icon: MdDirectionsTransit,
     component: Page404,
     id:'LogOut',
