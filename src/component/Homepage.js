@@ -4,8 +4,21 @@ import { IoIosHeartEmpty} from "react-icons/io";
 import { FcLike } from "react-icons/fc";
 import { Button } from '@material-ui/core';
 import { Link, Redirect } from 'react-router-dom';
-
+import {useState,useEffect} from 'react'
 function Homepage() {
+  const[but,setBut]= useState(true);
+  
+  const iconChange=()=>{
+    if(but===false){
+      setBut(true);
+    }
+    else{
+      setBut(false);
+    }
+  }
+
+  
+
     return (
        <>
         {Content.map( (prop,index) => (
@@ -17,7 +30,7 @@ function Homepage() {
 
                     <div class="py-3">
                         <h3 class="card-title text-center" style={{color:"#297CBE"}}><b>{prop.name}</b></h3>
-                        {/* {prop.fav==="1"?<FcLike/>:<IoIosHeartEmpty/>} */}
+                        {but===true?<FcLike className="btn" size="3.5rem" style={{float:"right"}} onClick={{iconChange}}/>:<IoIosHeartEmpty className="btn" size="3.5rem" style={{float:"right"}} onClick={{iconChange}}/>}
                     </div>
                     <div class="container-fluid">
                       <div class="row inline-block">

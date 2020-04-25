@@ -4,7 +4,8 @@ import Slider2 from './Slider2';
 import Checkbox from './Checkbox'
 function Filter() {
     return (
-       <div className="py-5">
+       <div className="container-fluid py-2">
+       <div className='text-center'><h2>Filter</h2></div>
       <center> <Checkbox/></center>
        <Slider/>
        <Slider2/>

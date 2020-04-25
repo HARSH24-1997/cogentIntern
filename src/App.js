@@ -8,6 +8,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { BrowserRouter,Switch, Route } from 'react-router-dom';
 import Page404 from './component/Page404';
 import Homepage from './component/Homepage';
+import Profile from './component/Profile';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
     <Redirect to ="/notFound"/> 
        </Switch>
     </BrowserRouter>
+    {/* <Profile/> */}
     </>
   );
 }

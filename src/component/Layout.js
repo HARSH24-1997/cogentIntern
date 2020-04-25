@@ -28,7 +28,7 @@ function Layout() {
         <Dashboard/>
         <Switch>
            <Route exact path="/" component={Homepage} />
-           <Route path="/Home" component={Homepage} />
+           <Route exact path="/Home" component={Homepage} />
            <Route path="/Profile" component={Profile} />
            <Route path="/Filter" component={Filter} />
            <Route path="/Activity" component={Activity} />
@@ -43,8 +43,8 @@ function Layout() {
            <Route path="/user1/Website3" render={(props)=><Card {...props} title={'Website 3'}  />}/>
             <Route path="/user1/Application2" render={(props)=><Card {...props} title={'Application 2'}  />}/>
            <Route path="/user1/Application4"render={(props)=><Card {...props} title={'Application 4'}  />}/>
-          
          </Switch>
+         <Route exact path="/Layout" component={Homepage} />
       </BrowserRouter> 
       </>
     )

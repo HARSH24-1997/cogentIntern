@@ -4,24 +4,27 @@ import Filter from './Filter';
 import Profile from './Profile';
 import Page404 from './Page404';
 import Home from './Homepage';
-import { FaHome } from "react-icons/fa";
-import { FaBookReader } from "react-icons/fa";
-import { MdDirectionsTransit } from "react-icons/md";
-import { MdWork } from "react-icons/md";
-import { TiContacts } from "react-icons/ti";
+import { GoHome } from "react-icons/go";
+import { AiOutlineBarChart } from "react-icons/ai";
+import { MdPersonOutline } from "react-icons/md";
+import { BsHeart } from "react-icons/bs";
+import { GiTakeMyMoney } from "react-icons/gi";
+import { GrFilter } from "react-icons/gr";
+import { IoIosLogOut } from "react-icons/io";
+import { AiOutlineShareAlt } from "react-icons/ai";
 
 const Routes = [
   {
     path: '/Home',
     sidebarName: 'Home',
-    icon: FaHome,
+    icon: GoHome,
     component: Home,
     id:'Intro',
   },
   {
     path: '/Profile',
     sidebarName: 'Profile',
-    icon: FaBookReader,
+    icon: MdPersonOutline,
     component: Profile,
     id:'Profile',
     
@@ -29,42 +32,42 @@ const Routes = [
   {
     path: '/Activity',
     sidebarName: 'Activity',
-    icon: MdDirectionsTransit,
+    icon: AiOutlineBarChart,
     component: Activity,
     id:'Activity',
   },
   {
     path: '/Favourite',
     sidebarName: 'Favourite',
-    icon: MdDirectionsTransit,
+    icon: BsHeart,
     component: Page404,
     id:'Favoutite',
   },
   {
     path: '/TotalEarning',
     sidebarName: 'Total Earning',
-    icon: MdDirectionsTransit,
+    icon: GiTakeMyMoney,
     component: Page404,
     id:'TotalEarning',
   },
   {
     path: '/Filter',
     sidebarName: 'Filter',
-    icon: MdDirectionsTransit,
+    icon: GrFilter,
     component: Filter,
     id:'Filter',
   },
   {
     path: '/Share',
     sidebarName: 'Share',
-    icon: MdDirectionsTransit,
+    icon:AiOutlineShareAlt,
     component: Page404,
     id:'Share',
   },
   {
     path: '/LogOut',
     sidebarName: 'Logout',
-    icon: MdDirectionsTransit,
+    icon: IoIosLogOut,
     component: Page404,
     id:'LogOut',
   },

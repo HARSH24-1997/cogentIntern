@@ -1,8 +1,10 @@
 import React from 'react'
 import dashboard from '../Images/dashboard.svg'
+import ImageEditor from './ImageEditor';
 function Profile() {
     return (
         <div class="py-3" >
+          <ImageEditor/>
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-12 mx-auto" >

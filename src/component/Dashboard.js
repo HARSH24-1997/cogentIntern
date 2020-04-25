@@ -13,6 +13,7 @@ import MenuList from '@material-ui/core/MenuList';
 import "../css/Layout.css"
 import { createMuiTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
+import Avatar from '../Images/avatar.svg';
 
 const lam = createMuiTheme({
   palette: {
@@ -96,14 +97,21 @@ function Navbar(props) {
     >
       
       <MenuList>
+      <div className="py-2">
+      <div className="container-fluid">
+      <div className="row inline-block">
+      <div className="col-6 max-auto"><img class="img-fluid d-block rounded-circle " src={Avatar} style={{height:"15vh"}} /></div>
+      <div className="col-6 px-0 justify-content-start py-2"><h5><b>Name</b></h5>
+      <h5><b>Developer</b></h5>
+      </div>
+      </div>
+      </div>
       <div className="py-2"><Divider/></div>
-        {/* {Routes.map((prop, index) => (
-      <MenuItem spy={true} smooth={true} duration={500} className="pb-1"><h4>{prop.sidebarName}</h4></MenuItem>
-        ))} */}
+      </div>
         {Routes.map((prop, index) => {
             return (<div>
               <Link to={prop.path} style={{ textDecoration: 'none',color:"#333333" }} key={index}>
-                <MenuItem className="py-2 text-center"><h5 style={{color: "black" }}>{prop.sidebarName}</h5></MenuItem></Link></div>
+             <div class="row"> <prop.icon class="py-2 mx-3" size="3.5rem" /> <MenuItem className="py-2 text-center"><h5 style={{color: "black" }}>{prop.sidebarName}</h5></MenuItem></div></Link></div> 
             )
           }
         )}

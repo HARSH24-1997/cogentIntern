@@ -4,6 +4,7 @@ function Activity() {
     return (
         <>
         <div className="container-fluid">
+        <div className='text-center'><h2>Activity</h2></div>
         <BarGraph/>
         </div>
         </>
